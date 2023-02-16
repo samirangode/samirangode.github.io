@@ -78,9 +78,7 @@
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://dreamfusion3d.github.io/">
-                <papertitle>ICP</papertitle>
-              </a>
+                <papertitle>3D Dense SLAM system using ICP</papertitle>
               <!-- <br>
               <a href="https://cs.stanford.edu/~poole/">Ben Poole</a>,
               <a href="https://www.ajayj.com/">Ajay Jain</a>,
@@ -96,7 +94,8 @@
               <a href="https://dreamfusion3d.github.io/gallery.html">gallery</a> -->
               <p></p>
               <p>
-                Iterative Closest Point.
+                - Camera Localisation on the ICL-NUIM dataset using Iterative Closest Point Algorithm. <br>
+                - Used point-based fusion to create a point cloud map
               </p>
             </td>
           </tr>
@@ -112,9 +111,7 @@
               </div>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://dreamfusion3d.github.io/">
                 <papertitle>NERF</papertitle>
-              </a>
               <!-- <br>
               <a href="https://cs.stanford.edu/~poole/">Ben Poole</a>,
               <a href="https://www.ajayj.com/">Ajay Jain</a>,
@@ -130,7 +127,9 @@
               <a href="https://dreamfusion3d.github.io/gallery.html">gallery</a> -->
               <p></p>
               <p>
-                Neural Radiance Field.
+                - Implemented a Differentiable Renderer for emission-absorption volumes.<br>
+                - Implemented a ray sampler for optimising volume parameters.<br> 
+                - Used a MLP to map 3D positions to Volume Density and colour
               </p>
             </td>
           </tr>
@@ -147,9 +146,9 @@
               </div>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://dreamfusion3d.github.io/">
+              
                 <papertitle>Quadric SLAM</papertitle>
-              </a>
+              
               <!-- <br>
               <a href="https://cs.stanford.edu/~poole/">Ben Poole</a>,
               <a href="https://www.ajayj.com/">Ajay Jain</a>,
@@ -165,7 +164,11 @@
               <a href="https://dreamfusion3d.github.io/gallery.html">gallery</a> -->
               <p></p>
               <p>
-                Representing a map around a quadric.
+                <!-- Representing a map around a quadric. -->
+                - Implemented on Object based semantic SLAM, created low-memory metric semantic maps for multi-robot communication.<br>
+                - Formulated a graph based SLAM. Used quadric factors with the factor graph with underlying visual inertial odometry.<br>
+                - Designed feature descriptors for SONAR using unsupervised learning for underwater SLAM.<br>
+                - Used an encoder decoder structure with CNNs with custom loss functions to learn without labels.<br>
               </p>
             </td>
           </tr>
@@ -181,9 +184,9 @@
               </div>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://dreamfusion3d.github.io/">
+              
                 <papertitle>Particle Filter</papertitle>
-              </a>
+              
               <!-- <br>
               <a href="https://cs.stanford.edu/~poole/">Ben Poole</a>,
               <a href="https://www.ajayj.com/">Ajay Jain</a>,
@@ -199,7 +202,9 @@
               <a href="https://dreamfusion3d.github.io/gallery.html">gallery</a> -->
               <p></p>
               <p>
-                Localisation using a particle filter.
+                <!-- Localisation using a particle filter. -->
+                - Monte Carlo Localization(MCL) based robot localization for an indoor robot using laser rangefinder and odometry.<br>
+                - Implemented the raycasting based sensor and motion model along with resampling.<br>
               </p>
             </td>
           </tr>
@@ -215,9 +220,9 @@
               </div>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://dreamfusion3d.github.io/">
+              
                 <papertitle>Single View to 3D</papertitle>
-              </a>
+              
               <!-- <br>
               <a href="https://cs.stanford.edu/~poole/">Ben Poole</a>,
               <a href="https://www.ajayj.com/">Ajay Jain</a>,
@@ -233,7 +238,38 @@
               <a href="https://dreamfusion3d.github.io/gallery.html">gallery</a> -->
               <p></p>
               <p>
-                Learing 3D representations using single views.
+                Learning 3D representations using single views.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <!-- <div class="two" id='dreamfusion_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/dreamfusion.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div> -->
+                <img src='' width="160" height="160">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2301.00891">
+                <papertitle>Understanding Political Polarization using Language Models: A dataset and method</papertitle>
+              </a>
+              <br>
+              <strong>Samiran Gode</strong>,
+              Supreeth Bare,
+              <a href="http://mlsp.cs.cmu.edu/people/bhiksha/">Bhiksha Raj</a>,
+							Hyungon(Clay) Yoo
+              <br>
+              <em>The AAAI 2023 Second Workshop on AI for Credible Elections</em>
+              <br>
+              <a href="https://arxiv.org/abs/2209.14988">arXiv</a>
+              <p></p>
+              <p>
+                - Finetuned Longformer on a scraped Wikipedia dataset to find most important tokens based on attention score.<br>
+                - Used other conventional techniques such as Word2Vec, Doc2Vec and BERT based models understand words which lead to polarisation.<br>
               </p>
             </td>
           </tr>
