@@ -84,6 +84,44 @@ a {
   font-size: 14px
 }
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.page-shell {
+  width: min(calc(100% - 40px), 960px);
+  margin-inline: auto;
+}
+
+.profile-layout td:first-child {
+  width: 62% !important;
+  padding: 16px 20px 16px 16px !important;
+}
+
+.profile-layout td:last-child {
+  width: 38% !important;
+  max-width: none !important;
+  padding: 16px !important;
+}
+
+.profile-layout img {
+  display: block;
+  max-width: 260px !important;
+  margin-inline: auto;
+}
+
+.section-heading td {
+  padding: 12px 16px !important;
+}
+
+.research-list td {
+  padding: 14px 12px !important;
+}
+
 strong {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
@@ -120,6 +158,13 @@ name {
   -webkit-transition: opacity .2s ease-in-out;
 }
 
+.project-video {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
 .fade {
   transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
@@ -137,3 +182,56 @@ span.highlight {
     white-space:nowrap;   /* keep it on one line */
     opacity:0.95;         /* softens the red a touch */
   }
+
+@media (max-width: 640px) {
+  .page-shell {
+    width: calc(100% - 28px);
+  }
+
+  .profile-layout,
+  .profile-layout tbody,
+  .profile-layout tr,
+  .research-list,
+  .research-list tbody,
+  .research-list tr {
+    display: block;
+    width: 100%;
+  }
+
+  .profile-layout td,
+  .research-list td {
+    display: block;
+    width: 100% !important;
+    max-width: none !important;
+    padding: 10px 12px !important;
+  }
+
+  .profile-layout td:last-child {
+    text-align: center;
+  }
+
+  .profile-layout img {
+    width: min(100%, 240px) !important;
+    margin-inline: auto;
+  }
+
+  .section-heading td {
+    padding: 10px 12px !important;
+  }
+
+  .research-list tr {
+    padding: 4px 0 12px;
+  }
+
+  .research-list td:first-child {
+    text-align: center;
+  }
+
+  .research-list .one {
+    margin-inline: auto;
+  }
+
+  .project-video {
+    margin-inline: auto;
+  }
+}
